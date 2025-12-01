@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Poppins font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <!-- Desktop nav -->
+  <nav id="desktop-nav">
+    <div class="logo">Aditya Jagtap</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certs">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile hamburger nav -->
+  <nav id="hamburger-nav">
+    <div class="logo">Aditya Jagtap</div>
+    <div class="hamburger-menu">
+      <div
+        class="hamburger-icon"
+        onclick="toggleMenu()"
+        aria-label="Menu"
+        role="button"
+        tabindex="0"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links" role="menu" aria-hidden="true">
+        <ul>
+          <li><a href="#profile" role="menuitem">Home</a></li>
+          <li><a href="#about" role="menuitem">About</a></li>
+          <li><a href="#Skills" role="menuitem">Skills</a></li>
+          <li><a href="#projects" role="menuitem">Projects</a></li>
+          <li><a href="#experience" role="menuitem">Experience</a></li>
+          <li><a href="#certs" role="menuitem">Certificates</a></li>
+          <li><a href="#contact" role="menuitem">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="profile-wrapper">
+      <!-- Profile Image -->
+      <div class="profile-pic-big">
+        <img
+          src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Passport_Photo.png"
+          alt="Aditya Jagtap"
+        />
+      </div>
+
+      <!-- Profile Content -->
+      <div class="profile-content">
+        <p class="hello-text">Hello, I'm</p>
+        <h1 class="profile-name">Aditya Jagtap</h1>
+        <p class="profile-role">Data Analyst</p>
+        <p class="tagline">
+          Transforming raw data into actionable insights using Power BI,
+          Tableau &amp; SQL.
+        </p>
+
+        <div class="profile-buttons">
+          <button
+            class="btn-profile white-btn"
+            onclick="window.open('https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Aditya_Jagtap_Data_Analyst_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn-profile black-btn"
+            onclick="location.href='#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+
+        <div class="profile-socials">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/linkedin.png"
+            class="icon"
+            alt="LinkedIn"
+            onclick="location.href='https://www.linkedin.com/in/aditya-jagtap-'"
+          />
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/github.png"
+            class="icon"
+            alt="GitHub"
+            onclick="location.href='https://github.com/AdityaJagtap-DataAnalyst'"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="kicker">Get To Know More</p>
+    <h1 class="section-title">About Me</h1>
+
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>
+            2+ year<br />
+            Data Analyst / MIS Executive
+          </p>
+        </div>
+        <div class="details-container">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>
+            B.Com Bachelors Degree in Commerce<br />
+            From Pune University
+          </p>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p2>
+          Hi, I'm Aditya Jagtap, a Data Analyst skilled in Power BI, Tableau,
+          SQL, and advanced Excel. I specialize in transforming raw data into
+          clear insights through interactive dashboards and automated reports.
+          With experience in WFM reporting and MIS operations, I focus on
+          improving data accuracy, visibility, and decision-making. I enjoy
+          solving complex problems, simplifying workflows, and creating
+          user-friendly analytics solutions. Curiosity drives me – I'm always
+          learning new tools, refining my skills, and exploring better ways to
+          tell stories with data.
+        </p2>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="Skills">
+    <p class="kicker">My Expertise</p>
+    <h1 class="section-title">Skills</h1>
+
+    <div class="skills-wrapper">
+      <!-- LEFT BOX -->
+      <div class="skills-box">
+        <h2 class="skills-heading">Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Excel</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">MySQL</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Power BI</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Tableau</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Python</p>
+              <p class="skill-level">Intermediate</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Google Sheets</p>
+              <p class="skill-level">Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT BOX -->
+      <div class="skills-box">
+        <h2 class="skills-heading">Data Analyst</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Data Visualization</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Data Cleaning</p>
+              <p class="skill-level">Intermediate</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">RTA Process</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">MIS Reporting</p>
+              <p class="skill-level">Advanced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Reports Creations</p>
+              <p class="skill-level">Experienced</p>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/checkmark.png"
+              class="skill-icon"
+            />
+            <div>
+              <p class="skill-name">Problem Solving</p>
+              <p class="skill-level">Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+  <div class="container section-header center">
+    <p class="kicker">Browse My Recent</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="filters-row">
+      <div class="project-filters" role="tablist" aria-label="Project filters">
+        <button class="filter-btn active" data-tool="all">All</button>
+        <button class="filter-btn" data-tool="powerbi">Power BI</button>
+        <button class="filter-btn" data-tool="sql">SQL</button>
+        <button class="filter-btn" data-tool="tableau">Tableau</button>
+      </div>
+    </div>
+
+    <div id="projectCount" style="color: var(--muted); font-weight: 600;">4 projects</div>
+  </div>
+
+  <div class="projects-carousel">
+    <button class="carousel-btn prev" aria-label="Previous"></button>
+
+    <div class="carousel-viewport" tabindex="0" aria-roledescription="carousel" aria-label="Projects carousel">
+      <div class="carousel-track">
+        <!-- 1 -->
+        <article class="proj-card" data-tools="powerbi sql">
+          <div class="proj-media">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Ecommerce.jpg"
+              alt="Ecommerce"
+            />
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Olist E-Commerce Dashboard</h3>
+            <p class="proj-short">
+              Revenue KPIs, top products, drilldowns by city & category for
+              commercial reporting.
+            </p>
+            <div class="proj-tools">
+              <div class="proj-tool-box">Power BI</div>
+              <div class="proj-tool-box">SQL</div>
+            </div>
+            <div class="proj-actions">
+              <a
+                class="btn outline"
+                href="https://github.com/AdityaJagtap-DataAnalyst/Ecommerce-Dashboards"
+                target="_blank" rel="noopener noreferrer"
+                >Details</a
+              >
+              <a class="btn outline preview-btn"
+                 href="https://app.powerbi.com/view?r=eyJrIjoiMDgyYjk1NjctYmJmMy00NWQ0LWFjNWMtM2M0Yzk1Y2FhOWViIiwidCI6IjdjNjZkNGIyLTVmY2QtNGRlYi1hMDQ4LTg1NGQ4ZWEyNDM3MSJ9"
+                 target="_blank" rel="noopener noreferrer"
+              >Preview</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="proj-card" data-tools="powerbi sql">
+          <div class="proj-media">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Bank%20Project.png"
+              alt="Bank"
+            />
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Bank Transaction Dashboard</h3>
+            <p class="proj-short">
+              Branch & customer transaction insights, trend analysis and
+              anomaly detection.
+            </p>
+            <div class="proj-tools">
+              <div class="proj-tool-box">Power BI</div>
+              <div class="proj-tool-box">SQL</div>
+            </div>
+            <div class="proj-actions">
+              <a
+                class="btn outline"
+                href="https://github.com/AdityaJagtap-DataAnalyst/Bank-Transaction-Analytics-Dashboard"
+                target="_blank" rel="noopener noreferrer"
+                >Details</a
+              >
+              <a class="btn outline preview-btn"
+                 href="https://app.powerbi.com/view?r=eyJrIjoiOTQyNjBkMzgtNjMwNi00ZDM0LTk4MTgtZDkyZTI1MTAzZmRiIiwidCI6IjdjNjZkNGIyLTVmY2QtNGRlYi1hMDQ4LTg1NGQ4ZWEyNDM3MSJ9"
+                 target="_blank" rel="noopener noreferrer"
+              >Preview</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="proj-card" data-tools="powerbi">
+          <div class="proj-media">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Insurance.png"
+              alt="Insurance"
+            />
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Insurance Analytics</h3>
+            <p class="proj-short">
+              Operational dashboards for claims & policy KPIs to reduce
+              turnaround and monitor growth.
+            </p>
+            <div class="proj-tools">
+              <div class="proj-tool-box">Power BI</div>
+            </div>
+            <div class="proj-actions">
+              <a
+                class="btn outline"
+                href="https://github.com/AdityaJagtap-DataAnalyst/Insurance-Analytics-Dashboard"
+                target="_blank" rel="noopener noreferrer"
+                >Details</a
+              >
+              <a class="btn outline preview-btn"
+                 href="https://app.powerbi.com/view?r=eyJrIjoiYTYxZjE2YjQtOGVhNC00YTVmLTk0OTItZDQ5YmM1ZTlhYmM5IiwidCI6IjdjNjZkNGIyLTVmY2QtNGRlYi1hMDQ4LTg1NGQ4ZWEyNDM3MSJ9"
+                 target="_blank" rel="noopener noreferrer"
+              >Preview</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="proj-card" data-tools="tableau sql">
+          <div class="proj-media">
+            <img
+              src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Loan.png"
+              alt="Loan"
+            />
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Bank Loan Analytics</h3>
+            <p class="proj-short">
+              Loan portfolio overview, disbursements, repayments and defaults
+              with branch risk KPIs.
+            </p>
+            <div class="proj-tools">
+              <div class="proj-tool-box">Tableau</div>
+              <div class="proj-tool-box">SQL</div>
+            </div>
+            <div class="proj-actions">
+              <a
+                class="btn outline"
+                href="https://github.com/AdityaJagtap-DataAnalyst/Bank-Loan-Analytics-Dashboard"
+                target="_blank" rel="noopener noreferrer"
+                >Details</a
+              >
+              <a class="btn outline preview-btn"
+                 href="https://drive.google.com/file/d/1VaNNcxrCcAZxBwU7JUaolXhVWZzA90P/view?usp=sharing"
+                 target="_blank" rel="noopener noreferrer"
+              >Preview</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <button class="carousel-btn next" aria-label="Next"></button>
+  </div>
+
+  <div class="carousel-dots" aria-hidden="true"></div>
+</section>
+
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container section-header center">
+      <p class="kicker">Where I've Worked</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+
+    <div class="experience-list">
+      <!-- Card 1 -->
+      <article class="exp-card">
+        <div class="exp-top-square">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/AiVariant.Png"
+            alt="Intern"
+          />
+        </div>
+        <h3>
+          Data Analyst Intern<br />
+          AI Variant Internship
+        </h3>
+        <div class="exp-meta">Jan 2025 - Oct 2025 | Remote</div>
+        <ul class="exp-bullets">
+          <li>Worked on data cleaning, SQL queries, and dashboard automation using Power BI & Tableau.</li>
+          <li>Designed and published interactive dashboards for business KPI tracking.</li>
+          <li>Created DAX-based metrics and drill-through visuals to identify performance trends.</li>
+          <li>Supported real-time SQL Server setup, improving team data sharing & analytics workflows.</li>
+        </ul>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="exp-card">
+        <div class="exp-top-square">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/SMC.png"
+            alt="Junior"
+          />
+        </div>
+        <h3>
+          Junior Data Analyst<br />
+          SMC Real Estate Advisors
+        </h3>
+        <div class="exp-meta">Mar 2023 - Sep 2024 | Pune</div>
+        <ul class="exp-bullets">
+          <li>Transformed weekly lead data into clear Power BI dashboards for 12 teams.</li>
+          <li>Prepared accurate monthly booking & MIS reports and performed RTA-style checks.</li>
+          <li>Managed token-tracking reports and RM incentive invoices.</li>
+          <li>Coordinated agreement/documentation processes, ensuring zero delays & high accuracy.</li>
+          <li>Trained new RMs on reporting workflows, documentation standards, and operational processes.</li>
+        </ul>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="exp-card">
+        <div class="exp-top-square">
+          <img
+            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/4B.png"
+            alt="MIS"
+          />
+        </div>
+        <h3>
+          MIS Data Executive<br />
+          Broker Network Pvt. Ltd.
+        </h3>
+        <div class="exp-meta">Jan 2022 - Feb 2023 | Pune</div>
+        <ul class="exp-bullets">
+          <li>Delivered daily attendance, productivity, and RTA reports—reduced errors by 25%.</li>
+          <li>Supported workforce management by tracking productive hours, idle time & break adherence.</li>
+          <li>Managed weekly roster planning to ensure optimal shift coverage and staffing balance.</li>
+          <li>Built Google Sheets automation that reduced manual effort by 40%.</li>
+          <li>Monitored call volumes, leads uploaded, and operations metrics for leadership.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certs" class="section">
+    <div class="container section-header center">
+      <p class="kicker">Validation of Skills</p>
+      <h2 class="section-title">Certificates</h2>
+    </div>
+
+    <div class="certs-list">
+      <div class="cert-item">
+        <div class="cert-text">
+          <h4>Data Analyst Certification Excel/R Distinction</h4>
+          <p>
+            Modules: Power BI & DAX, Tableau, Advanced Excel (Macros & VBA),
+            SQL
+          </p>
+        </div>
+        <button
+          class="cert-view-btn"
+          onclick="window.open('https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/ExcelR Data Analyst Certificate.png')"
+        >
+          View
+        </button>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-text">
+          <h4>Certificate Program in Data Analyst NASSCOM</h4>
+          <p>
+            IT-ITeS SSC: Gold Level, 90% Score (Aligned to Govt. Standards)
+          </p>
+        </div>
+        <button
+          class="cert-view-btn"
+          onclick="window.open('https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Nasscom Certificate.png')"
+        >
+          View
+        </button>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-text">
+          <h4>Data Analyst (Internship) AI Variant</h4>
+          <p>Jan 2025 – Oct 2025: Hands-on Power BI, Tableau & SQL projects</p>
+        </div>
+        <button
+          class="cert-view-btn"
+          onclick="window.open('https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Internship Certificate.png')"
+        >
+          View
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+  <p class="sectiontext">
+    <span>Get in Touch</span>
+  </p>
+  <h1 class="title">Contact Me</h1>
+
+  <div class="contact-card">
+    <div class="contact-main">
+  <div class="contact-icon-wrap">
+    <div class="contact-circle">
+      <img
+        src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/email.png"
+        alt="email"
+      />
+    </div>
+    <div class="contact-labels">
+      <p class="contact-tagline">Open to data analyst roles & collaboration</p>
+      <a href="mailto:Jagtapaditya118@gmail.com" class="contact-email-link">
+        Jagtapaditya118@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <!-- put this as a clear second row -->
+  <div class="contact-meta">
+    <span>Aundh, Pune</span>
+    <span class="dot-separator"></span>
+    <span>+91-9307512880</span>
+  </div>
+</div>
+
+
+    <div class="contact-actions">
+      <a
+        class="pill primary"
+        href="https://www.linkedin.com/in/aditya-jagtap-"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Connect on LinkedIn
+      </a>
+      <a
+        class="pill ghost"
+        href="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/AdityaJagtapDataAnalystResume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+<footer>
+  <nav class="footer-nav">
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certs">Certificate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <p class="copyright-text">
+    Copyright © 2025 Aditya Jagtap. All Rights Reserved.
+  </p>
+</footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>

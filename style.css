@@ -1246,7 +1246,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;          /* more space between email row and meta row */
+  gap: 12px;          /* space between email row and meta row */
   text-align: left;
 }
 
@@ -1393,7 +1393,8 @@ body {
   }
 
   .contact-meta {
-    padding-left: 0;     /* no indent on mobile */
+    /* keep same left padding so it sits under email */
+    padding-left: 72px;
     flex-wrap: wrap;
   }
 
@@ -1475,3 +1476,4 @@ footer .copyright-text {
     font-size: 12px;
   }
 }
+

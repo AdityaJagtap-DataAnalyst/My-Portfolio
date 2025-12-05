@@ -6,187 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Aditya Jagtap — Data Analyst</title>
-  <meta name="description"
-        content="Transforming raw data into actionable insights using Power BI, Tableau, SQL and Excel.">
+  <meta name="description" content="Transforming raw data into actionable insights using Power BI, Tableau, SQL and Excel.">
 
-  <!-- Favicon: circular logo in browser tab -->
+  <!-- Favicon (circle logo in browser tab) -->
+  <!-- Make sure Assets/logo.png is a square PNG with a circular logo and transparent corners -->
   <link rel="icon" type="image/png"
         href="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/logo.png"
         sizes="32x32">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Open Graph (WhatsApp, LinkedIn, Facebook, etc.) -->
+  <!-- Open Graph (WhatsApp / LinkedIn / FB / etc.) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aditya Jagtap — Data Analyst Portfolio">
-  <meta property="og:description"
-        content="Explore dashboards, SQL projects, WFM reporting, MIS workflows and interactive analytics.">
-  <meta property="og:url"
-        content="https://adityajagtap-dataanalyst.github.io/My-Portfolio/">
-  <!-- New blue preview banner (1200 x 627/630 recommended) -->
-  <meta property="og:image"
-        content="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Beige-Minimalist-Business-LinkedIn-Article-Cover-Image.jpg">
+  <meta property="og:description" content="Explore dashboards, SQL projects, WFM reporting, MIS workflows and interactive analytics.">
+  <meta property="og:url" content="https://adityajagtap-dataanalyst.github.io/My-Portfolio/">
+  <!-- Preview image (can be same logo or a wider 1200x630 card if you design one) -->
+  <meta property="og:image" content="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Passport_Photo.png">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="627">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aditya Jagtap — Data Analyst Portfolio">
-  <meta name="twitter:description"
-        content="Power BI, Tableau, SQL, MIS, WFM — Data Analytics projects & dashboards.">
-  <meta name="twitter:image"
-        content="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Beige-Minimalist-Business-LinkedIn-Article-Cover-Image.jpg">
+  <meta name="twitter:description" content="Power BI, Tableau, SQL, MIS, WFM — Data Analytics projects & dashboards.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Passport_Photo.png">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-  <!-- Desktop nav -->
-  <nav id="desktop-nav">
-    <div class="logo">Aditya Jagtap</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#profile">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certs">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Mobile hamburger nav -->
-  <nav id="hamburger-nav">
-    <div class="logo">Aditya Jagtap</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon"
-           onclick="toggleMenu()"
-           aria-label="Menu"
-           role="button"
-           tabindex="0">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links" role="menu" aria-hidden="true">
-        <ul>
-          <li><a href="#profile" role="menuitem">Home</a></li>
-          <li><a href="#about" role="menuitem">About</a></li>
-          <li><a href="#Skills" role="menuitem">Skills</a></li>
-          <li><a href="#projects" role="menuitem">Projects</a></li>
-          <li><a href="#experience" role="menuitem">Experience</a></li>
-          <li><a href="#certs" role="menuitem">Certificates</a></li>
-          <li><a href="#contact" role="menuitem">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- PROFILE -->
-  <section id="profile">
-    <div class="profile-wrapper">
-      <div class="profile-pic-big">
-        <img
-          src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Passport_Photo.png"
-          alt="Aditya Jagtap"
-        />
-      </div>
-
-      <div class="profile-content">
-        <p class="hello-text">Hello, I'm</p>
-        <h1 class="profile-name">Aditya Jagtap</h1>
-        <p class="profile-role">Data Analyst</p>
-        <p class="tagline">
-          Transforming raw data into actionable insights using Power BI,
-          Tableau &amp; SQL.
-        </p>
-
-        <div class="profile-buttons">
-          <button
-            class="btn-profile white-btn"
-            onclick="window.open('https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/Aditya_Jagtap_Data_Analyst_Resume.pdf')">
-            Download CV
-          </button>
-          <button
-            class="btn-profile black-btn"
-            onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-
-        <div class="profile-socials">
-          <img
-            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/linkedin.png"
-            class="icon"
-            alt="LinkedIn"
-            onclick="location.href='https://www.linkedin.com/in/aditya-jagtap-'"
-          />
-          <img
-            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/github.png"
-            class="icon"
-            alt="GitHub"
-            onclick="location.href='https://github.com/AdityaJagtap-DataAnalyst'"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <p class="kicker">Get To Know More</p>
-    <h1 class="section-title">About Me</h1>
-
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img
-            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/experience.png"
-            alt="Experience icon"
-            class="icon"
-          />
-          <h3>Experience</h3>
-          <p>
-            2+ year<br />
-            Data Analyst / MIS Executive
-          </p>
-        </div>
-        <div class="details-container">
-          <img
-            src="https://raw.githubusercontent.com/AdityaJagtap-DataAnalyst/My-Portfolio/main/Assets/education.png"
-            alt="Education icon"
-            class="icon"
-          />
-          <h3>Education</h3>
-          <p>
-            B.Com Bachelors Degree in Commerce<br />
-            From Pune University
-          </p>
-        </div>
-      </div>
-
-      <div class="text-container">
-        <p2>
-          Hi, I'm Aditya Jagtap, a Data Analyst skilled in Power BI, Tableau,
-          SQL, and advanced Excel. I specialize in transforming raw data into
-          clear insights through interactive dashboards and automated reports.
-          With experience in WFM reporting and MIS operations, I focus on
-          improving data accuracy, visibility, and decision-making. I enjoy
-          solving complex problems, simplifying workflows, and creating
-          user-friendly analytics solutions.
-        </p2>
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
 
 <body>
   <!-- Desktop nav -->
@@ -855,8 +704,6 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
 
 
 
